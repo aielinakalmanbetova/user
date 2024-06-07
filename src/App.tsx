@@ -6,9 +6,9 @@ import UserList from './components/UserList/UserList';
 
 const App = () => {
   const [Users, setUsers] = useState<Users[]>([
-    {id: '1', name: 'Alan', email: 'alan@gmail.com', image: 'https://www.flaticon.com/free-icon/programmer_560216?term=user&related_id=560216', active: 'on'},
-    {id: '2', name: 'Aya', email: 'aya@gmail.com', image: 'https://www.flaticon.com/free-icon/woman_4140047?term=user&page=1&position=37&origin=search', active: 'off'},
-    {id: '3', name: 'Aman', email: 'aman@gmail.com', image: 'https://www.flaticon.com/free-icon/programmer_560216?term=user&related_id=560216', active: 'on'},
+    {id: Math.random().toString(), name: 'Alan', role: 'user', email: 'alan@gmail.com', image: 'https://cdn-icons-png.freepik.com/512/4086/4086679.png', active: false},
+    {id: Math.random().toString(), name: 'Aya', role: 'user', email: 'aya@gmail.com', image: 'https://thumbs.dreamstime.com/b/died-laughing-humor-react-funny-story-childhood-happiness-concept-kid-cheerful-face-emotions-sincere-emotional-134638084.jpg', active: true},
+    {id: Math.random().toString(), name: 'Aman', role: 'user', email: 'aman@gmail.com', image: 'https://cdn-icons-png.freepik.com/512/4086/4086679.png', active: false},
   ]);
 
   const addUser = (user: Users) => {

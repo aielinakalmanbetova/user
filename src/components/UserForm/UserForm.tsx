@@ -94,7 +94,7 @@ const  UserForm: React.FC<Props> = ({onSubmit}) => {
                className='form-control'
         />
       </div>
-      <button type="button" className="btn btn-outline-warning mt-2" >Create</button>
+      <button type="submit" className="btn btn-outline-warning mt-2">Create</button>
     </form>
   );
 };
